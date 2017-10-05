@@ -1,4 +1,5 @@
 # Embed Resource
+- modified from https://github.com/cyrilcode/embed-resource
 
 Embed binary files and resources (such as GLSL Shader source files) into
 C++ projects. Uses C++11 features and Boost for filesystem.
@@ -27,11 +28,11 @@ provided in `Resource.h`. Here's an example:
     #include <iostream>
     using namespace std;
 
-    #include "Resource.h"
+    #include "embedresource.h"
 
     int main() {
 
-        Resource text = LOAD_RESOURCE(frag_glsl);
+        ParaEngine::Resource text = LOAD_RESOURCE(frag_glsl);
         cout << string(text.data(), text.size()) << endl;
 
         return EXIT_SUCCESS;

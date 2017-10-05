@@ -1,3 +1,4 @@
+// LiXizhi modified from https://github.com/cyrilcode/embed-resource
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
 #include <iostream>
